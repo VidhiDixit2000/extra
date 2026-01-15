@@ -1,0 +1,66 @@
+<template>
+        <div class="container">
+                  <div>
+                         <canvas class="canvas" width="560px" height="320px;"> </canvas>
+                         <!-- style="border: 2px solid black -->
+                </div>
+    
+
+              <div class="layer1 frame ">
+                 <img
+                    src='https://image.s11.sfmc-content.com/lib/fe3b15717564047b711676/m/1/69561f11-adbb-4a03-ac87-3f82e7b7a376.png'
+                   alt="image-1"
+                    data-apiname="Frame__mdt"
+               />
+             </div>
+
+              <div class="color-preview fcoloroptions">
+                  <template for:each={framestyledColors} for:item="item">
+                   <button class="color-circle-frames"  key={item.colorValue} style={item.style} data-color={item.colorValue} onclick={handleColorClick}
+                  >f</button>
+                </template>
+              </div>
+
+
+            <div class="layer2 lens">
+               <img
+                 src='https://image.s11.sfmc-content.com/lib/fe3b15717564047b711676/m/1/b1a2c913-c74d-4dfc-b920-03ebd2391ad2.png'
+                 alt="image-2"
+                data-apiname="Lens__mdt"
+               />
+           </div>
+
+           <div class="color-preview lcoloroptions">
+               <template for:each={lensstyledColors} for:item="item">
+               <button class="color-circle-lens"  key={item.colorValue} style={item.style} data-color={item.colorValue} onclick={handleColorClick}
+                >l</button>
+              </template>
+           </div>
+    
+
+    <!-- Color Preview Buttons -->
+   
+    
+          <button class="group" onclick={seefullimage}>Show full image</button>
+     <!-- <div class="button-group">
+        <button class="group" onclick={seefullimage}>Show full image</button>
+    </div> -->
+  
+
+<!-- <div class="slds-grid slds-wrap slds-gutters">
+  <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+    <span>1 part product</span>
+
+    <div>color</div>
+</div>
+  <div class="slds-col slds-size_1-of-1 slds-large-size_6-of-12">
+    <span>2 part prodcut</span>
+ <div>color</div>
+</div>
+</div>
+<div class="slds-grid slds-wrap slds-gutters">
+  <div class="slds-col slds-size_1-of-1"><span>preview</span></div>
+</div> -->
+
+</div>
+</template>
